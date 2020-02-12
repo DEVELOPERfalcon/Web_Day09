@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- 1. 3번 -->
+<!-- 2. 3번 -->
+<!-- 3. 2번 -->
+<!-- 4 -->
+<!-- <html>
+    <head>
+        <meta charset="utf-8">
+        <title>localhost</title>
+        <script>
+            var sum = 0;
+            var start = new Date();
+            for(var i=0; i<=1000000; i++){
+                sum += i;
+            }
+            var end = new Date();
+            var time = end-start;
+            document.write(time+'밀리초가 걸렸음!');
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html> -->
+<!-- 5 -->
+<!-- <html>
+    <head>
+        <meta charset="utf-8">
+        <title>localhost</title>
+        <script>
+            function change(){
+                var input = document.getElementById('in1');
+                var str = input.value;
+                var str2 = str.replace(str.charAt(0), str.charAt(0).toUpperCase());
+                alert(str2);
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="in1">
+        <input type="button" onclick="change()" value="change">
+    </body>
+</html> -->
+<!-- 6 -->
+<!-- <html>
+    <head>
+        <meta charset="utf-8">
+        <title>localhost</title>
+        <script>
+            var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            var month = new Date().getMonth();
+            document.write('It is '+months[month]);
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html> -->
+<!-- 7 -->
+<!-- <html>
+    <head>
+        <meta charset="utf-8">
+        <title>localhost</title>
+        <script>
+            var movie = ["터미네이터", "트랜스포머"];
+            movie[2] = "맨오브스틸";
+            movie[movie.length-2] = "스파이더맨";
+            alert(movie[movie.length-1]);
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html> -->
+<!-- 8 -->
+<!-- <html>
+    <head>
+        <meta charset="utf-8">
+        <title>localhost</title>
+        <script>
+            var arr = ["사과", "오렌지", "귤", "당근", "케일"];
+            var n = Math.floor(Math.random()*5);
+            alert(arr[n]);
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html> -->
+<!-- 9 -->
+<!-- <html>
+    <head>
+        <meta charset="utf-8">
+        <title>localhost</title>
+        <script>
+            var arr = ["Hello", 10, 32.6, true];
+            function find(array, value){
+                for(var i=0;i<array.length;i++){
+                    if(array[i]===value) return i;
+                }
+                return undefined;
+            }
+            document.write(find(arr, "Hello"));
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html> -->
+<!-- 10 -->
+<!-- <html>
+    <head>
+        <meta charset="utf-8">
+        <title>localhost</title>
+        <script>
+            var str = "buy XXX now";
+            function check(str){
+                if(str.indexOf("XXX")===-1) return false;
+                else return true;
+            }
+            document.write(check(str));
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html> -->
+<!-- 11 -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>localhost</title>
+        <script>
+            function check(){
+                var month = new Date().getMonth()+1;
+                var day = new Date().getDate();
+                document.write(month+"월"+day+"일");
+                setTimeout('check()', 1000*60*60*24);
+            }
+            check();
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
